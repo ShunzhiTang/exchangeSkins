@@ -13,10 +13,13 @@
 		246C52A91BEDED6D00D0A19B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246C52A71BEDED6D00D0A19B /* Main.storyboard */; };
 		246C52AB1BEDED6D00D0A19B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 246C52AA1BEDED6D00D0A19B /* Assets.xcassets */; };
 		246C52AE1BEDED6D00D0A19B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 246C52AC1BEDED6D00D0A19B /* LaunchScreen.storyboard */; };
-		24DC9F131BEEEDB4005117B3 /* skin in Resources */ = {isa = PBXBuildFile; fileRef = 24DC9F121BEEEDB4005117B3 /* skin */; settings = {ASSET_TAGS = (); }; };
 		24DC9F151BEEF2CC005117B3 /* green.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24DC9F141BEEF2CC005117B3 /* green.bundle */; settings = {ASSET_TAGS = (); }; };
 		24DC9F191BEEF3B0005117B3 /* blue.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 24DC9F181BEEF3B0005117B3 /* blue.bundle */; settings = {ASSET_TAGS = (); }; };
 		24DC9F1D1BEEF94E005117B3 /* TSZSkinTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DC9F1C1BEEF94E005117B3 /* TSZSkinTool.m */; settings = {ASSET_TAGS = (); }; };
+		24DC9F201BEF009E005117B3 /* OtherViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DC9F1F1BEF009E005117B3 /* OtherViewController.m */; settings = {ASSET_TAGS = (); }; };
+		24DC9F231BEF033B005117B3 /* pictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24DC9F221BEF033B005117B3 /* pictureViewController.m */; settings = {ASSET_TAGS = (); }; };
+		24DC9F291BEF065D005117B3 /* colors.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24DC9F281BEF065D005117B3 /* colors.plist */; settings = {ASSET_TAGS = (); }; };
+		24DC9F2B1BEF0718005117B3 /* skin in Resources */ = {isa = PBXBuildFile; fileRef = 24DC9F2A1BEF0718005117B3 /* skin */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,11 +33,16 @@
 		246C52AA1BEDED6D00D0A19B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		246C52AD1BEDED6D00D0A19B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		246C52AF1BEDED6D00D0A19B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		24DC9F121BEEEDB4005117B3 /* skin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin; sourceTree = "<group>"; };
 		24DC9F141BEEF2CC005117B3 /* green.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = green.bundle; sourceTree = "<group>"; };
 		24DC9F181BEEF3B0005117B3 /* blue.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = blue.bundle; sourceTree = "<group>"; };
 		24DC9F1B1BEEF94E005117B3 /* TSZSkinTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSZSkinTool.h; sourceTree = "<group>"; };
 		24DC9F1C1BEEF94E005117B3 /* TSZSkinTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSZSkinTool.m; sourceTree = "<group>"; };
+		24DC9F1E1BEF009E005117B3 /* OtherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherViewController.h; sourceTree = "<group>"; };
+		24DC9F1F1BEF009E005117B3 /* OtherViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherViewController.m; sourceTree = "<group>"; };
+		24DC9F211BEF033B005117B3 /* pictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pictureViewController.h; sourceTree = "<group>"; };
+		24DC9F221BEF033B005117B3 /* pictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = pictureViewController.m; sourceTree = "<group>"; };
+		24DC9F281BEF065D005117B3 /* colors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = colors.plist; sourceTree = "<group>"; };
+		24DC9F2A1BEF0718005117B3 /* skin */ = {isa = PBXFileReference; lastKnownFileType = folder; path = skin; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +75,19 @@
 		246C529D1BEDED6D00D0A19B /* exchangeSkins */ = {
 			isa = PBXGroup;
 			children = (
+				24DC9F2A1BEF0718005117B3 /* skin */,
 				24DC9F1A1BEEF92D005117B3 /* Tools */,
 				24DC9F181BEEF3B0005117B3 /* blue.bundle */,
 				24DC9F141BEEF2CC005117B3 /* green.bundle */,
-				24DC9F121BEEEDB4005117B3 /* skin */,
 				246C52A11BEDED6D00D0A19B /* AppDelegate.h */,
 				246C52A21BEDED6D00D0A19B /* AppDelegate.m */,
+				24DC9F281BEF065D005117B3 /* colors.plist */,
 				246C52A41BEDED6D00D0A19B /* ViewController.h */,
+				24DC9F211BEF033B005117B3 /* pictureViewController.h */,
+				24DC9F221BEF033B005117B3 /* pictureViewController.m */,
 				246C52A51BEDED6D00D0A19B /* ViewController.m */,
+				24DC9F1E1BEF009E005117B3 /* OtherViewController.h */,
+				24DC9F1F1BEF009E005117B3 /* OtherViewController.m */,
 				246C52A71BEDED6D00D0A19B /* Main.storyboard */,
 				246C52AA1BEDED6D00D0A19B /* Assets.xcassets */,
 				246C52AC1BEDED6D00D0A19B /* LaunchScreen.storyboard */,
@@ -160,10 +173,11 @@
 			files = (
 				246C52AE1BEDED6D00D0A19B /* LaunchScreen.storyboard in Resources */,
 				24DC9F191BEEF3B0005117B3 /* blue.bundle in Resources */,
-				24DC9F131BEEEDB4005117B3 /* skin in Resources */,
 				24DC9F151BEEF2CC005117B3 /* green.bundle in Resources */,
 				246C52AB1BEDED6D00D0A19B /* Assets.xcassets in Resources */,
+				24DC9F291BEF065D005117B3 /* colors.plist in Resources */,
 				246C52A91BEDED6D00D0A19B /* Main.storyboard in Resources */,
+				24DC9F2B1BEF0718005117B3 /* skin in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24DC9F1D1BEEF94E005117B3 /* TSZSkinTool.m in Sources */,
+				24DC9F201BEF009E005117B3 /* OtherViewController.m in Sources */,
 				246C52A61BEDED6D00D0A19B /* ViewController.m in Sources */,
+				24DC9F231BEF033B005117B3 /* pictureViewController.m in Sources */,
 				246C52A31BEDED6D00D0A19B /* AppDelegate.m in Sources */,
 				246C52A01BEDED6D00D0A19B /* main.m in Sources */,
 			);

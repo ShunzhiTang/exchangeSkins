@@ -23,6 +23,13 @@
  *  供设置界面用得  保存最新的皮肤样式
  */
 + (void)saveSkin:(NSString *)skin;
-
+/**
+ *  根据当前的皮肤样式  以及  key  获取对应的颜色
+ *
+ *  @param key 控件的某个属性的(text  bg title)名称  two_label_text
+ *
+ *  @return 返回的图片
+ */
++ (UIColor *)loadColor:(NSString *)key;
 
 @end

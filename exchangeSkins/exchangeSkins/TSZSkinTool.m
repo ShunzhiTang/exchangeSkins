@@ -37,4 +37,30 @@ static NSString *_skin;
     //归档
     [[NSUserDefaults standardUserDefaults] setValue:skin forKey:@"skinType"];
 }
+
+//sh
++ (UIColor *)loadColor:(NSString *)key{
+    
+    //1、获取plist 路径
+    NSString *plistName = [NSString stringWithFormat:@"skin/%@/color.plist",_skin];
+    
+    //2、获取 plist 文件的 路径
+    NSString *path = [[NSBundle mainBundle] pathForResource:plistName ofType:nil];
+    
+    NSDictionary *dict = [NSDictionary dictionaryWithContentsOfFile:path];
+    
+    NSString *result = dict[key];
+    
+    NSArray *allColor = [result componentsSeparatedByString:@","];
+    
+    CGFloat r = [allColor[0] integerValue]/255.0;
+    CGFloat g = [allColor[1] integerValue]/255.0;
+    CGFloat b = [allColor[2] integerValue]/255.0;
+    
+    return [UIColor colorWithRed:r green:g blue:b alpha:1.0];
+}
+
+
+
+
 @end
