@@ -70,6 +70,7 @@
                         <outlet property="face" destination="5Ex-J6-Zdo" id="ndo-Lz-mET"/>
                         <outlet property="heart" destination="Kfh-YZ-OhE" id="qhb-Ug-N8q"/>
                         <outlet property="rect" destination="HWb-QN-n0s" id="fQS-pp-fbU"/>
+                        <outlet property="segmented" destination="IU5-KX-8eB" id="rGt-fg-g49"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
