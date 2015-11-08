@@ -4,6 +4,7 @@
 //  Copyright © 2015年 Tsz. All rights reserved.
 
 #import "ViewController.h"
+#import "TSZSkinTool.h"
 
 @interface ViewController ()
 
@@ -21,8 +22,9 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    self.face.image = [UIImage imageNamed:@"skin/blue/face.png"];
     
+    //程序加载就去调用
+    [self setSkin];
 }
 
 
@@ -56,8 +58,10 @@
 
     
     // titleForSegmentAtIndex 获取当前选项的标题
-    [[NSUserDefaults standardUserDefaults] setObject:[sender titleForSegmentAtIndex:sender.selectedSegmentIndex] forKey:@"skin"];
+//    [[NSUserDefaults standardUserDefaults] setObject:[sender titleForSegmentAtIndex:sender.selectedSegmentIndex] forKey:@"skin"];
     
+    [TSZSkinTool saveSkin:[sender titleForSegmentAtIndex:sender.selectedSegmentIndex]];
+
     [self setSkin];
 }
 
@@ -68,17 +72,10 @@
 - (void)setSkin{
     
     //解档 得到 存储的标题
-    NSString *titleColor = [[NSUserDefaults standardUserDefaults] valueForKey:@"skin"];
-    
-//    NSLog(@"%@",titleColor);
-    self.face.image = [UIImage imageNamed:[NSString stringWithFormat:@"skin/%@/face.png" , titleColor]];
-    self.heart.image = [UIImage imageNamed:[NSString stringWithFormat:@"skin/%@/heart.png" , titleColor]];
-    self.rect.image = [UIImage imageNamed:[NSString stringWithFormat:@"skin/%@/rect.png" , titleColor]];
+    self.face.image = [TSZSkinTool loadImage:@"face"];
+    self.rect.image = [TSZSkinTool loadImage:@"rect"];
+    self.heart.image = [TSZSkinTool loadImage:@"heart"];
 }
-
-
-
-
 //- (void)viewDidAppear:(BOOL)animated{
 //    [super viewDidAppear:animated];
 //
