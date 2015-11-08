@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="IU5-KX-8eB">
+                                <rect key="frame" x="10" y="48" width="580" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tbw-QO-a9X"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="blue"/>
+                                    <segment title="red"/>
+                                    <segment title="orange"/>
+                                    <segment title="green"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeSkin:" destination="BYZ-38-t0r" eventType="valueChanged" id="a7u-mT-xdu"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5Ex-J6-Zdo">
+                                <rect key="frame" x="180" y="98" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Kaa-68-uAH"/>
+                                    <constraint firstAttribute="height" constant="128" id="WqV-Vm-aKs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HWb-QN-n0s">
+                                <rect key="frame" x="180" y="404" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="bsJ-PW-ayk"/>
+                                    <constraint firstAttribute="height" constant="128" id="gKE-AI-Kny"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Kfh-YZ-OhE">
+                                <rect key="frame" x="180" y="251" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="6oI-wc-j87"/>
+                                    <constraint firstAttribute="width" constant="240" id="cbh-VV-VZ7"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kfh-YZ-OhE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1aP-Yw-ihc"/>
+                            <constraint firstItem="5Ex-J6-Zdo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9tZ-rb-n87"/>
+                            <constraint firstItem="IU5-KX-8eB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="28" id="GzP-Qa-LhS"/>
+                            <constraint firstItem="IU5-KX-8eB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="Tpb-h4-VV6"/>
+                            <constraint firstItem="Kfh-YZ-OhE" firstAttribute="top" secondItem="5Ex-J6-Zdo" secondAttribute="bottom" constant="25" id="Trg-WB-MyJ"/>
+                            <constraint firstAttribute="trailing" secondItem="IU5-KX-8eB" secondAttribute="trailing" constant="10" id="Uq2-vY-9Li"/>
+                            <constraint firstItem="5Ex-J6-Zdo" firstAttribute="top" secondItem="IU5-KX-8eB" secondAttribute="bottom" constant="20" id="j96-HP-0aa"/>
+                            <constraint firstItem="HWb-QN-n0s" firstAttribute="top" secondItem="Kfh-YZ-OhE" secondAttribute="bottom" constant="25" id="tec-np-C7x"/>
+                            <constraint firstItem="HWb-QN-n0s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y0m-fT-Cb6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="face" destination="5Ex-J6-Zdo" id="ndo-Lz-mET"/>
+                        <outlet property="heart" destination="Kfh-YZ-OhE" id="qhb-Ug-N8q"/>
+                        <outlet property="rect" destination="HWb-QN-n0s" id="fQS-pp-fbU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="217" y="289"/>
+        </scene>
+    </scenes>
+</document>
